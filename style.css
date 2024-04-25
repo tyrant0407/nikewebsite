@@ -1,0 +1,254 @@
+@font-face {
+    font-family: gilroy;
+    src: url(./Gilroy-ExtraBold.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: white;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    overflow: hidden;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #343F53;
+    display: flex;
+
+}
+
+#right{
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(#EE3465,rgb(230, 40, 40)) ;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 64% 100%);
+
+}
+
+#left{
+    width: 60%;
+    height: 100%;
+    background-color: #343F53;
+}
+ #main>img{
+    height: 110%;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-50%) rotate(-30deg) rotateY(180deg) ;
+    filter: brightness(1.4);
+    z-index: 9;
+    animation-name: shoes;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes shoes {
+    0%{
+        left: 150%;
+    }
+    100%{
+        left: 70%;
+    }
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    padding: 0px 50px;
+    
+}
+#nav img{
+    height: 60px;
+}
+
+#navpart2{
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+}
+#navpart2 h5{
+    font-weight: 500;
+}
+
+#navpart3{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    gap: 10px;
+   
+}
+#navpart3 h1{
+   font-weight: 500;
+}
+#nav i{
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.155);
+    padding: 10px;
+    border-radius: 50px;
+}
+#fir{
+    width: 550px;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    animation-name: cart;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+@keyframes cart {
+    0%{
+        left: 0%;
+        top: 40%;
+    }
+    100%{
+        left: 25%;
+        top: 40%;
+    }
+    
+}
+#r{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#r2{
+    font-size: 80px;
+    line-height: 70px;
+    margin-bottom: 10px;
+}
+#fir p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+#fir i{
+    color: gold;
+    margin-bottom: 40px;
+}
+#fir button{
+    padding: 10px 30px;
+    background-color: #EE3465;
+    border-radius: 20px;
+    border: none;
+}
+#bg{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    color: rgba(0, 0, 0, 0.264);
+    transform: translate(-50%,-50%);
+    font-size: 550px;
+    letter-spacing: 50px;  
+    animation-name: back;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes back {
+    0%{
+       scale: 2;
+    }
+    100%{
+        scale: 1;
+    }
+    
+}
+#loader{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #343F53;
+   z-index: 99;
+   animation-name: loader;
+   animation-duration: 2.5s;
+   animation-delay: 2s;
+   animation-fill-mode: forwards;
+   animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+#loader img{
+   width: 400px;
+   font-family: gilroy;
+   animation-name: logo;
+   animation-duration: 1s;
+   animation-delay: 0.5s;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+   
+   
+}
+@keyframes loader {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -100%;
+    }
+}
+@keyframes logo {
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.5;
+    }
+}
+#bnav{
+    position: absolute;
+    top: 87%;
+    padding-left: 240px;
+    display: flex;
+    gap: 1250px;
+}
+#bnav2{
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+#navb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#box {
+   width: 80px;
+   height: 80px;
+   border: 1.5px solid ;
+   border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box i{
+    font-size: 25px;
+}
+span{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#navb p{
+    font-size: 30px;
+    font-weight: 500;
+}
